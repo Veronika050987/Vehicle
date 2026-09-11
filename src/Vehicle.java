@@ -1,0 +1,19 @@
+class Vehicle {
+    private int speed;
+
+    public Vehicle(int speed){
+        setSpeed(speed);
+    }
+
+    public int getSpeed(){
+        return speed;
+    }
+
+    public void setSpeed(int speed){
+        if(speed <=0){
+            System.out.println("Скорость не может быть отрицательной");
+        }else {
+            this.speed = speed;
+        }
+    }
+}
